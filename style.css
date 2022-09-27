@@ -20,6 +20,7 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
 }
 
 body {
+    background-color: hsl(0, 0%, 95%);
     font-size: 15px;
     display: flex;
     justify-content: center;
