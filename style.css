@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* ### Primary
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    border-style: hidden;
+    border-radius: 50px;
+    padding: 20px;
+    width: 60%;
+    margin-top: 20%;
+}
+
+img {
+    max-width: 100%;
+    width: 75px;
+}
+
+.container {
+    width: 900px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.card1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 3rem 0 3rem 3rem;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card1 p {
+    width: 80%;
+}
+
+.card1 button {
+    color: hsl(31, 77%, 52%);
+}
+
+.card1 button:hover {
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.card2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 3rem 0 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card2 p {
+    width: 80%;
+}
+
+.card2 button:hover {
+    color: white;
+    background-color: hsl(184, 100%, 22%);
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.card2 button {
+    color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+    background-color: hsl(179, 100%, 13%);
+    padding: 3rem 0 3rem 3rem;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card3 p {
+    width: 80%;
+}
+
+.card3 button {
+    color: hsl(179, 100%, 13%);
+}
+
+.card3 button:hover {
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+    cursor: pointer;
+    border: 2px solid white;
+    margin-right: -2rem;
+}
+
+@media (max-width: 768px) {
+    button {
+        margin: 0;
+        min-width: 60%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+    }
+
+    .card1 {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card3 {
+        border-radius: 0 0 10px 10px;
+    }
+}
